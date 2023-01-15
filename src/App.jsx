@@ -13,7 +13,7 @@ function App() {
         <input
           type="button"
           key={i}
-          className="w-14 h-14 bg-bgNeutralDarkBlue rounded-full focus:bg-bgNeutralMediumGrey hover:bg-bgPrimaryOrange"
+          className="md:w-14 md:h-14 bg-bgNeutralDarkBlue rounded-full focus:bg-bgNeutralMediumGrey hover:bg-bgPrimaryOrange mobile:w-10 mobile:h-10 text-neutral-400"
           value={i}
           onClick={(e) => setRate(e.target.value)}
         />
@@ -35,18 +35,20 @@ function App() {
       <div className="box-border flex justify-center items-center h-screen">
         {/* card */}
         {!loading && (
-          <div className="w-[413px] h-[417px] bg-[rgba(27,35,46,255)] rounded-3xl flex-col">
+          <div className="md:w-[413px] md:h-[417px] bg-[rgba(27,35,46,255)] rounded-3xl flex-col mobile:w-[326px] mobile:h-[359px]">
             {/* card item wrapper */}
-            <div className="w-full h-full px-9 py-9">
+            <div className="w-full h-full md:px-9 md:py-9 mobile:px-7 mobile:py-7">
               {/* card items */}
-              <div className="w-14 h-14 bg-bgNeutralDarkBlue rounded-full mb-7">
+              <div className="md:w-14 md:h-14 bg-bgNeutralDarkBlue rounded-full md:mb-7 mobile:w-10 mobile:h-10 mobile:mb-4">
                 <div className="bg-icon-star w-full h-full bg-no-repeat bg-center"></div>
               </div>
               <div>
-                <h1 className="font-bold text-3xl my-3">How did we do?</h1>
+                <h1 className="font-bold md:text-3xl md:my-3 mobile:my-2 mobile:text-2xl">
+                  How did we do?
+                </h1>
               </div>
               <div>
-                <p className="text-neutral-400">
+                <p className="text-neutral-400 mobile:text-[13px]">
                   Please let us know how we did with your support request. All
                   feedback is appreciated to help us improve our offering!
                 </p>
@@ -60,7 +62,7 @@ function App() {
                 <div>
                   <input
                     type="submit"
-                    className="bg-bgPrimaryOrange rounded-3xl w-full font-bold text-neutral-300 py-3 hover:bg-white hover:text-bgPrimaryOrange"
+                    className="bg-bgPrimaryOrange rounded-3xl w-full font-bold text-neutral-300 py-3 hover:bg-white hover:text-bgPrimaryOrange tracking-widest"
                     value="SUBMIT"
                   />
                 </div>

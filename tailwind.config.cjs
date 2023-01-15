@@ -4,6 +4,12 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      mobile: "375px",
+      md: "720px",
+      lg: "1280px",
+      desktop: "1440px",
+    },
     extend: {
       colors: {
         bgPrimaryOrange: "hsl(25, 97%, 53%)",
