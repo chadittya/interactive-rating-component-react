@@ -18,6 +18,7 @@ module.exports = {
       },
       backgroundImage: {
         "icon-star": "url('../img/icon-star.svg')",
+        "illu-thankyou": "url('../img/illustration-thank-you.svg')",
       },
     },
   },
