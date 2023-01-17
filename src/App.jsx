@@ -62,8 +62,9 @@ function App() {
                 <div>
                   <input
                     type="submit"
-                    className="bg-bgPrimaryOrange rounded-3xl w-full font-bold text-neutral-300 py-3 hover:bg-white hover:text-bgPrimaryOrange tracking-widest"
+                    className="bg-bgPrimaryOrange rounded-3xl w-full font-bold text-neutral-300 py-3 hover:bg-white hover:text-bgPrimaryOrange tracking-widest disabled:bg-gray-500 disabled:text-black"
                     value="SUBMIT"
+                    disabled={rate == 0 ? true : false}
                   />
                 </div>
               </form>
